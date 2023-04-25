@@ -18,7 +18,7 @@ https://github.com/kuraise
                 n.remove();
                 const addStyles = (element, styles = {}) => Object.entries(styles).forEach(([key, value]) => element.style[key] = value);
                 let style = document.createElement('style');
-                style.innerHTML = (`details > summary { cursor: pointer; transition: 0.15s; list-style: none; } details > summary:hover { color: hsl(0, 0%, 50%) } details > summary::-webkit-details-marker { display: none; } details summary ~ * { animation: sweep .5s ease-in-out; } @keyframes sweep { 0%    {opacity: 0; transform: translateY(-10px)} 100%  {opacity: 1; transform: translateY(0)} } .cheat { border: none; background: hsl(0, 0%, 20%); padding: 5px; margin: 3px; width: 60%; color: hsl(0, 0%, 100%); transition: 0.2s; border-radius: 5px; cursor: pointer; } .cheat:hover { background: hsl(0, 0%, 30%); }`);
+                style.innerHTML = (`details > summary { cursor: pointer; transition: 0.15s; list-style: none; } details > summary:hover { color: hsl(0, 0%, 50%) } details > summary::-webkit-details-marker { display: none; } details summary ~ * { animation: sweep .5s ease-in-out; } @keyframes sweep { 0%    {opacity: 0; transform: translateY(-10px)} 100%  {opacity: 1; transform: translateY(0)} } .cheat { border: none; background: #4631bd; padding: 5px; margin: 3px; width: 60%; color: hsl(0, 0%, 100%); transition: 0.2s; border-radius: 5px; cursor: pointer; } .cheat:hover { background: hsl(0, 0%, 30%); }`);
             
                 const GUI = document.createElement('div');
                 [...document.querySelectorAll("#GUI")].forEach(x => x.remove());
@@ -27,15 +27,16 @@ https://github.com/kuraise
                 addStyles(GUI, {
                     width: '400px',
             /* //height: '500px', */
-                    background: 'hsl(0, 0%, 10%)',
-                    borderRadius: '10px',
+                    background: '#F2F5FC',
                     position: 'absolute',
                     textAlign: 'center',
-                    fontFamily: 'Nunito',
-                    color: 'white',
+                    fontFamily: 'Poppins',
+                    color: '#4631bd',
                     overflow: 'hidden',
                     top: '50px',
-                    left: '50px'
+                    left: '50px',
+                    borderSize: "15px",
+                    borderColor: "#4631bd",
                 });
             
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -68,12 +69,12 @@ https://github.com/kuraise
                     fontSize: '1.5rem',
                     textAlign: 'center'
                 });
-                header.innerHTML = `Blookware <span style="font-size: 0.75rem">v12.18.22</span>`;
+                header.innerHTML = `Blookware <span style="font-size: 0.75rem">v1.0.0</span>`;
             
                 let close = document.createElement('button');
                 header.appendChild(close);
                 addStyles(close, {
-                    background: 'red',
+                    background: 'transparent',
                     height: '45px',
                     width: '45px',
                     border: 'none',
@@ -82,11 +83,11 @@ https://github.com/kuraise
                     top: '-10px',
                     right: '-10px',
                     fontSize: '1.5rem',
-                    borderRadius: '10px',
-                    fontFamily: 'Nunito',
-                    fontWeight: 'bolder',
+                    fontFamily: 'Poppins',
+                    fontWeight: 'bold',
                     paddingTop: '10px',
-                    paddingRight: '15px'
+                    paddingRight: '15px',
+                    color: "#4631bd",
                 });
                 close.innerText = 'X';
                 close.onclick = () => {
@@ -98,7 +99,7 @@ https://github.com/kuraise
                 let minimize = document.createElement('button');
                 header.appendChild(minimize);
                 addStyles(minimize, {
-                    background: '#444444',
+                    background: 'transparent',
                     height: '45px',
                     width: '45px',
                     border: 'none',
@@ -108,15 +109,19 @@ https://github.com/kuraise
                     left: '-10px',
                     fontSize: '1.5rem',
                     borderRadius: '10px',
-                    fontFamily: 'Nunito',
-                    fontWeight: 'bolder',
+                    fontFamily: 'Poppins',
+                    fontWeight: 'bold',
                     paddingTop: '10px',
                     paddingLeft: '15px',
+                    color: "#4631bd",
                 })
                 minimize.innerText = '-';
-                minimize.onclick = () => bodyDiv.hidden = !bodyDiv.hidden;
+
+                minimize.onclick = () => bodyDiv.hidden = !bodyDiv.hidden
+                
                 let bodyDiv = document.createElement('div');
                 let body = document.createElement('div');
+
                 bodyDiv.appendChild(body);
                 GUI.appendChild(bodyDiv);
             
@@ -131,7 +136,8 @@ https://github.com/kuraise
                 bodyDiv.appendChild(footer);
                 footer.style.fontSize = '0.9rem';
                 footer.style.paddingBottom = '5px';
-                footer.innerHTML = (`<span><a target="blank" href="https://discord.gg/QznzysxvX4">Made by OneMinesraft2#5394</a></span>`);
+
+                footer.innerHTML = (`<span><a target="blank" href="https://github.com/kuraise" style="text-decoration = none;">Made by kura#6311</a></span>`);
             
                 let cheats = ({
                     global: [
@@ -335,7 +341,7 @@ https://github.com/kuraise
                             }
                         },
                         {
-                            name: "Get Daily Rewards",
+                            name: "Get Max Tokens & XP Daily",
                             description: "Gets max daily tokens and xp",
                             run: function () {
                                 let i = document.createElement('iframe');
@@ -347,7 +353,7 @@ https://github.com/kuraise
                                     var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
                                     axios.post("https://play.blooket.com/api/playersessions/solo", { gameMode: "Factory" }).then(({ data: { t } }) => {
                                         axios.get("https://play.blooket.com/api/users/me").then(({ data: { name } }) => {
-                                            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 1000, addedXp: 500 })
+                                            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
                                                 .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
                                                 .catch(() => alert('There was an error when adding rewards.'));
                                         }).catch(() => alert('There was an error user data.'));
@@ -380,12 +386,12 @@ https://github.com/kuraise
                 global.innerHTML = (`<summary style="padding: 10px; font-size: 1.5em; font-weight: bolder">Global</summary>`);
                 for (let script of cheats.global) {
                     let cheat = createButton(script.name);
-                    cheat.style.backgroundColor = script.type == "toggle" ? script.enabled ? "#47A547" : "#A02626" : "hsl(0, 0%, 20%)";
+                    cheat.style.backgroundColor = script.type == "toggle" ? script.enabled ? "#4631bd" : "#5941e0" : "hsl(0, 0%, 20%)";
                     cheat.onclick = () => {
                         try {
                             script.run();
                         } finally {
-                            cheat.style.backgroundColor = script.type == "toggle" ? script.enabled ? "#47A547" : "#A02626" : "hsl(0, 0%, 20%)";
+                            cheat.style.backgroundColor = script.type == "toggle" ? script.enabled ? "#4631bd" : "#5941e0" : "hsl(0, 0%, 20%)";
             /* // console.log(script); */
                         }
                     };
@@ -403,12 +409,12 @@ https://github.com/kuraise
                     if (!curPage || !cheats[curPage]) return;
                     for (let cheat of cheats[curPage]) {
                         let button = createButton(cheat.name);
-                        button.style.backgroundColor = cheat.type == "toggle" ? cheat.enabled ? "#47A547" : "#A02626" : "hsl(0, 0%, 20%)";
+                        button.style.backgroundColor = cheat.type == "toggle" ? cheat.enabled ? "#4631bd" : "#5941e0" : "hsl(0, 0%, 20%)";
                         button.onclick = () => {
                             try {
                                 cheat.run();
                             } finally {
-                                button.style.backgroundColor = cheat.type == "toggle" ? cheat.enabled ? "#47A547" : "#A02626" : "hsl(0, 0%, 20%)";
+                                button.style.backgroundColor = cheat.type == "toggle" ? cheat.enabled ? "#4631bd" : "#5941e0" : "hsl(0, 0%, 20%)";
             /* // console.log(cheat); */
                             }
                         };
