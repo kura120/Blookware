@@ -15,7 +15,7 @@
 
 <h3>Bookmark Download Method [SAFE]</h1>
 
-1. Download code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
+1. Download code from [`source.min.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/src/source.min.js)
 2. Go to bookmark manager `chrome://bookmarks/`
 3. Press the three buttons on the top right
 4. Press `Import Bookmark`
@@ -24,7 +24,7 @@
 
 <h3>Bookmark Copy+Paste Code Method [SAFE]</h1>
 
-1. copy the code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
+1. copy the code from [`source.min.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/src/source.min.js)
 2. Go to bookmark manager `chrome://bookmarks/`
 3. Press add new bookmark
 4. Enter whatever name you want on the `Name` section
@@ -39,7 +39,7 @@
 
 <h3>Inspect Console Code [UNSAFE/BANNABLE]</h3>
 
-1. copy the code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
+1. copy the code from [`source.min.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/src/source.min.js)
 2. Go to blooket
 3. press `CTRL+SHIFT+I`
 4. go to the `Console` section
