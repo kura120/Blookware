@@ -1,7 +1,7 @@
 // Bookmarks buttons
 
 let x = new XMLHttpRequest();
-x.open("GET", "./src/src.min.js", true);
+x.open("GET", "./src/source.min.js", true);
 x.responseType = "text";
 
 x.onload = () => {
