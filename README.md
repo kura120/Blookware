@@ -11,7 +11,9 @@
   </a>
 </p>
 
-<h3>Bookmark Download Method [SAFEST]</h1>
+<h2>Methods</h2>
+
+<h3>Bookmark Download Method [SAFE]</h1>
 
 1. Download code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
 2. Go to bookmark manager `chrome://bookmarks/`
@@ -20,7 +22,7 @@
 5. And choose the `main.js` script that you downloaded
 6. Choose a name, press save, and you're done, just press the bookmark on any site in blooket
 
-<h3>Bookmark Copy+Paste Code Method [SAFEST]</h1>
+<h3>Bookmark Copy+Paste Code Method [SAFE]</h1>
 
 1. copy the code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
 2. Go to bookmark manager `chrome://bookmarks/`
@@ -29,8 +31,25 @@
 5. Paste the code in the `URL` section **MAKE SURE "javascript: " IS IN THE BEGINNING OF THE CODE
 6. Press save and you're done, just press the bookmark on any site in blooket
 
+<h3>Website Bookmark Drag Method [SAFE]</h3>
+
+1. Head to the [`Blookware`](https://blookware.vercel.app) site
+2. Drag the Blooket logo on the Blookware site to your blookmarks
+3. You're done, go into blooket and click on the "Blookware" bookmark
+
+<h3>Inspect Console Code [UNSAFE/BANNABLE]</h3>
+
+1. copy the code from [`main.js`](https://raw.githubusercontent.com/kuraise/Blookware/main/main.js)
+2. Go to blooket
+3. press `CTRL+SHIFT+I`
+4. go to the `Console` section
+5. Paste the code
+
+<h2>Conclusion</h2>
+
 <h3>For Developers</h3>
 **YOU MAY EDIT THIS PRODUCT / FORK THIS PROJECT AND EDIT THE FILES AS YOU WISH**
+
 this product was meant for learning purposes which means you can fork / copy this project and edit it's contents as you wish.
 
 <h3>Disclaimer</h3>
