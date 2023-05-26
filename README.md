@@ -54,4 +54,4 @@
 this product was meant for learning purposes which means you can fork / copy this project and edit it's contents as you wish.
 
 <h3>Disclaimer</h3>
-This project is not affiliated with Blooket or any other site/application, it is neither mine or the developer's fault for the result of misusage of the code. This project was just created for the improvement of my programming and educational purposes for others to learn. Again, me or anyone else who has helped develop this product is not affiliated with Blooket or any other sites/applications.
+This project is not affiliated with Blooket or any other site/application, it is neither mine or the developer's fault for the result of misusage of the code. This project was just created for the improvement of my programming and educational purposes for others to learn. Again, me or anyone else who has helped develop this product is not affiliated with Blooket or any other sites/applications. This product can be discontinued at any times and for any reason, if not discontinued you may create a issue and make sure to post what feature does not work or a glitch (you must show or describe how the glitch is caused).
