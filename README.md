@@ -48,7 +48,8 @@
 <h2>Conclusion</h2>
 
 <h3>For Developers</h3>
-**YOU MAY EDIT THIS PRODUCT / FORK THIS PROJECT AND EDIT THE FILES AS YOU WISH**
+
+##### YOU MAY EDIT THIS PRODUCT, FORK, OR CREATE A PULL REQUEST FOR THIS PROJECT AND EDIT THE FILES IN YOUR OWN REPO AS YOU WISH
 
 this product was meant for learning purposes which means you can fork / copy this project and edit it's contents as you wish.
 
